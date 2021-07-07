@@ -3,22 +3,171 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/skeleton.css">
+    <link rel="stylesheet" href="style/style.css">
 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>Kayliegh's Web Dev Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/4454afcecf.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <header> 
       <nav>
-
+        <div class="nav-wrapper">
+          <div class="nav-menu">
+            <ul> 
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#my-work">My Work</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      <div><h1>Hello, world! </h1></div>
-    </main>
-    <footer>
+      <section id="main">
+        <div class="container tag" id="intro">
+          <div class="row">
+            <h1>Hello, world! </h1>
+            <ul>
+              <li>Slick Slider https://kenwheeler.github.io/slick/</li>
+              <li>Lazy Load</li>
+              <li>Minified CSS</li>
+              <li>Simple CSS animations</li>
+              <li>Images and Summaries of Work/Challenges</li>  
+            </ul>
+          </div>
+          <div class="row">
+            <a href="#my-work"><button id="continueButton" class="grow"><i class="fas fa-long-arrow-alt-down"></i>  Scroll Down</button></a>
+          </div>
+        </div>
+      </section>
+      <section id="my-work">
+        <div class="container tag">
+          <div class="row section-title">
+            <h2>Examples of My Work</h2>
+            
+          </div>
+          <div class="row project-row">
+            <div class="one-half column">
+              <div class="card">
+                <div class="container">
+                  <h4>eCommerce Site</h4>
+                  <a href="#mywork" data-id="1" id="1" onmouseover="clickArrow(this)" onclick="clickArrow(this);">
+                  <img src="images/SeedAndSproutDesktop_Home.PNG" alt="Screenshot of Seed and Sprout Farm Desktop Website">               
+                  <h5 class="hide-mobile align-right feature-tag">View Features <i class="fas fa-long-arrow-alt-right"></i><h5>
+                  <h5 class="mobile-only feature-tag">View Features <i class="fas fa-long-arrow-alt-down"></i></h5></a>
+                </div>
+              </div>
+            </div>
+            <div class="one-half column">
+              <div id="features-1" class="feature-list container">
+                <h5>Transforming Owner's Vision into Reality</h5>
+                <ul>
+                  <li>WordPress Theme Customization Using Hooks and Filters</li>
+                  <li>Built on WooCommerce Platform for Easy Store Management</li>
+                  <li>Clean, Responsive Design Focused on Product Value</li>
+                  <br>
+                  <span>Visit <a href="https://seedandsprout.farm">SeedAndSprout.Farm</span></a>
+                </ul>
+              </div>              
+            </div>
+          </div>
 
+          <div class="row project-row">
+            <div class="one-half column hide-mobile">
+              <div id="features-2" class="feature-list container">
+                <h5>Reaching More Clients with a Straight-Forward Design </h5>
+                <ul>
+                  <li>Custom Design and Build with CSS & HTML</li>
+                  <li>Branding and Logos Developed for Brand Recognition</li>
+                  <li>Hosting, Domain, and Google Analytics Included</li>
+                  <br>
+                  <span>Visit <a href="https://skylineappraisalwnc.com">Skyline Appraisal WNC</a></span>
+                </ul>
+              </div>              
+            </div>
+
+            <div class="one-half column">
+              <div class="card">
+                <div class="container">
+                  <h4>Buisiness Landing Page</h4>
+                             
+                  <a href="#mywork" data-id="2" id="2" onmouseover="clickArrow(this)" onclick="clickArrow(this);">
+                    <img class="hide-mobile" src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Seed and Sprout Farm Desktop Website">    
+                  <h5 class="hide-mobile"><i class="fas fa-long-arrow-alt-left"></i> View Features </h5>
+                  </a>
+                  <a href="#mywork" data-id="3" id="3" onmouseover="clickArrow(this)" onclick="clickArrow(this)";>
+                    <img class="mobile-only" src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Seed and Sprout Farm Desktop Website">    
+                  <h5 class="mobile-only feature-tag">View Features <i class="fas fa-long-arrow-alt-down"></i></h5></a>
+                </div>
+              </div>
+            </div>
+
+              <div class="one-half column mobile-only">
+                <div id="features-3" class="feature-list container">
+                  <h5>Reaching More Clients with a Straight-Forward Design </h5>
+                  <ul>
+                    <li>Custom Design and Build with CSS & HTML</li>
+                    <li>Branding and Logos Developed for Brand Recognition</li>
+                    <li>Hosting, Domain, and Google Analytics Included</li>
+                    <br>
+                    <span>Visit <a href="https://skylineappraisalwnc.com">Skyline Appraisal WNC</a>
+                  </ul>
+                </div>              
+              </div>
+            
+          </div>
+
+
+          
+        </div>
+      </section>
+      <section id="about">
+        <div class="container tag">
+          <div class="row section-title">
+            <h2>About Me</h2>
+          </div>
+          <div class="row">
+            <div class="five columns">
+              <img id="selfie" src="images/kayliegh.jpg" alt="Photo of the developer, Kayliegh Hill">
+            </div>
+            <div class="seven columns">
+              <p>I'm a web developer based in New York City, working remotely with clients across the US. I specialize in creating websites for small buisinesses seeking greater visibility on the web.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section id="contact">
+        <div class="container tag">
+          <div class="row section-title">
+            <h2>Contact</h2>
+          </div>
+          <div class="row">
+            <div class="contact-box">
+              <ul>
+                <li><a href="mailto:kayliegh.hill@gmail.com">Email </a></li>
+                <li><a href="https://www.linkedin.com/in/kayliegh-hill/">Linked In</a></li>
+                <li><a href="github.com/kayhill"><i class="fab fa-github-alt"></i> GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
     </footer>
     <script src="style/script.js"></script>
   </body>

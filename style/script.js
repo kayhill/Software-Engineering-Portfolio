@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', pageLoaded);
 const tags = document.getElementsByClassName("tag");
 const intro = document.getElementById("intro");
 const continueBtn = document.getElementById("continueButton");
+const underCardHolder = document.getElementById("under-card-holder");
+const pullMe = document.getElementById("pull-me");
+const arrowRight = document.getElementById("arrow-right");
 
 
 function pageLoaded() {  
@@ -30,7 +33,15 @@ function clickButton(){
 }
 
 function clickArrow(arrow) {
+  // Testing 
   console.log(arrow.getAttribute("data-id"));
+
   let x = arrow.getAttribute("data-id");
-  document.getElementById("features-" + x).classList.add("visible");
-}
+  let f = document.getElementById("features-" + x)
+  f.parentNode.classList.add("visible-card", "six");
+  f.parentNode.parentNode.classList.remove("hide-mobile");
+  f.classList.add("visible");
+  if (x == 1) {
+    pullMe.remove();
+  };
+} 

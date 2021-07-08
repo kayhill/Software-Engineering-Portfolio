@@ -54,34 +54,73 @@
       <section id="my-work">
         <div class="container tag">
           <div class="row section-title">
-            <h2>Examples of My Work</h2>
-            
+            <h2>Examples of My Work</h2>            
           </div>
           <div class="row project-row">
-            <div class="one-half column">
-              <div class="card">
+            <div class="one-half column project-card">
+              <div class="card">              
                 <div class="container">
-                  <h4>eCommerce Site</h4>
-                  <a href="#mywork" data-id="1" id="1" onmouseover="clickArrow(this)" onclick="clickArrow(this);">
+                  <h4>eCommerce Site</h4>                  
                   <img src="images/SeedAndSproutDesktop_Home.PNG" alt="Screenshot of Seed and Sprout Farm Desktop Website">               
-                  <h5 class="hide-mobile align-right feature-tag">View Features <i class="fas fa-long-arrow-alt-right"></i><h5>
-                  <h5 class="mobile-only feature-tag">View Features <i class="fas fa-long-arrow-alt-down"></i></h5></a>
-                </div>
+                </div>                
               </div>
+              
+              <a href="#mywork" data-id="1" id="1" onclick="clickArrow(this);"><div id="arrow-right" class="arrow-right hide-mobile"></div>
+              
             </div>
-            <div class="one-half column">
+            <div class="one column pull-me" id="pull-me">
+              <button id="pull-me-button">Click Me <i class="fas fa-long-arrow-alt-right"></i></button>
+            </div></a>
+
+            <div class= "under-card-holder hide-mobile">
+              <div class="five columns under-card">            
               <div id="features-1" class="feature-list container">
-                <h5>Transforming Owner's Vision into Reality</h5>
-                <ul>
-                  <li>WordPress Theme Customization Using Hooks and Filters</li>
-                  <li>Built on WooCommerce Platform for Easy Store Management</li>
-                  <li>Clean, Responsive Design Focused on Product Value</li>
-                  <br>
-                  <span>Visit <a href="https://seedandsprout.farm">SeedAndSprout.Farm</span></a>
-                </ul>
-              </div>              
-            </div>
+                <h5>Transformed Owner's Vision into Reality</h5>
+                  <ul>
+                    <li>WordPress Theme Customization Using Hooks and Filters</li>
+                    <li>Built on WooCommerce Platform for Easy Store Management</li>
+                    <li>Clean, Responsive Design Focused on Product Value</li>
+                    <br>
+                    <span>Visit <a href="https://seedandsprout.farm">SeedAndSprout.Farm</span></a>
+                  </ul>
+              </div>
+              </div>
+            </div>                   
           </div>
+
+          <div class="row project-row">
+
+            <div class= "under-card-holder hide-mobile">
+              <div class="five columns under-card-right">            
+              <div id="features-2" class="feature-list container">
+                <h5>Reaching More Clients with a Straight-Forward Design </h5>
+                <ul>
+                  <li>Custom Design and Build with CSS & HTML</li>
+                  <li>Branding and Logos Developed for Brand Recognition</li>
+                  <li>Hosting, Domain, and Google Analytics Included</li>
+                  <br>
+                  <span>Visit <a href="https://skylineappraisalwnc.com">Skyline Appraisal WNC</a></span>
+                </ul>
+              </div>
+              </div>
+            </div> 
+
+            <div class="one-half column project-card">
+              <a href="#mywork" data-id="2" id="2" onclick="clickArrow(this);"><div id="arrow-left" class="arrow-left"></div> 
+              </a>
+              <div class="card">              
+                <div class="container">
+                  <h4>Buisiness Landing Page</h4>                  
+                  <img src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Skyline Appraisal Desktop Website">               
+                </div>                
+              </div>      
+            </div>                                       
+          </div>
+
+         
+
+                  
+
 
           <div class="row project-row">
             <div class="one-half column hide-mobile">
@@ -102,11 +141,11 @@
                 <div class="container">
                   <h4>Buisiness Landing Page</h4>
                              
-                  <a href="#mywork" data-id="2" id="2" onmouseover="clickArrow(this)" onclick="clickArrow(this);">
+                  <a href="#mywork" data-id="2" id="2" onclick="clickArrow(this);">
                     <img class="hide-mobile" src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Seed and Sprout Farm Desktop Website">    
                   <h5 class="hide-mobile"><i class="fas fa-long-arrow-alt-left"></i> View Features </h5>
                   </a>
-                  <a href="#mywork" data-id="3" id="3" onmouseover="clickArrow(this)" onclick="clickArrow(this)";>
+                  <a href="#mywork" data-id="3" id="3" onclick="clickArrow(this)";>
                     <img class="mobile-only" src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Seed and Sprout Farm Desktop Website">    
                   <h5 class="mobile-only feature-tag">View Features <i class="fas fa-long-arrow-alt-down"></i></h5></a>
                 </div>

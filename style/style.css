@@ -305,6 +305,16 @@ hr.solid {
   height: 300px;
 }
 
+#bio {
+  text-align: left;
+}
+
+#youtube-link {
+  text-decoration: none;
+  color: black;
+  pointer-events: none;
+}
+
 /* Contact */
 .contact-box ul {
   list-style-type: none;

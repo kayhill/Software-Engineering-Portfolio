@@ -44,7 +44,7 @@ button:hover {
 .nav-wrapper {
   position: relative;
   height: 55px;
-  background-color: rgb(0, 185, 124);
+  background-color: rgb(10, 11, 95);
 }
 
 nav ul {
@@ -69,8 +69,76 @@ li a:hover {
 }
 
 /*Intro*/
+#intro {
+  background-image: url('../images/NYCBackgroundImage.jpg');
+  background-blend-mode: soft-light;
+  background-color: #ccb8c9c0;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+hr.solid {
+    border-top: 3px solid #a01c78;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+#name {
+  font-size: 1.2em;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.intro-text {
+  margin: 10vh 0 0 0;
+}
 
 
+.intro-text h1 {
+  margin: 0 0 10px 0;
+  padding: 0 0;
+}
+
+#intro-graphics {
+  display: flex;
+
+}
+
+#intro-graphics button {
+  color: white;
+}
+
+#selfie-container {
+  max-width: 50%;
+  margin: -5% 10%;
+}
+
+#scroll-container {
+  align-content: flex-end;
+  display: none;
+}
+
+#intro-button {
+  color: #003366;
+  border: white;
+}
+
+
+@media (max-width: 550px) {
+  .intro-text {
+    margin: 10vh 0 5% 0;
+    text-align: right;
+    width: 95%;
+  };
+  #selfie-container {
+    margin: -5% 0;
+  };
+
+
+
+}
 
 
 /* My Work */
@@ -82,6 +150,7 @@ li a:hover {
   display: flex;
   z-index: 10;
   opacity: 1;
+  margin: 0 auto;
 }
 
 
@@ -97,8 +166,10 @@ li a:hover {
 }
 
 .card img {
-  width: 98%;
   border-radius: 5px 5px 0 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  
 }
 
 .card:hover {
@@ -145,6 +216,11 @@ li a:hover {
   transition: all 2s;  
 }
 
+@media (max-width: 550px) {
+  .under-card, .under-card-right {
+    margin-bottom: 8%;
+  }
+}
 
 
 .arrow-right {
@@ -156,7 +232,7 @@ li a:hover {
   border-top: 60px solid transparent;
   border-bottom: 60px solid transparent;
   border-left: 60px solid #a01c78;
-  text-align: left;
+
 }
 
 .arrow-left {
@@ -168,21 +244,20 @@ li a:hover {
   border-top: 60px solid transparent;
   border-bottom: 60px solid transparent;
   border-right: 60px solid #00336de6;
-  text-align: left;
 }
 
 .arrow-down {
   position: relative;
   z-index: 1;
-  margin: 0% 30% 0 0;
   width: 0px;
   height: 0px;
   border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 60px solid #003366;
-  text-align: left;
+  border-left: 60px solid transparent;
 }
 
+.arrow-down-pink {
+  border-right: 60px solid #a01c78;
+}
 
 .visible-card {
   color: white;
@@ -221,12 +296,6 @@ li a:hover {
     text-align: right;
     margin: 0 0;
     
-  }
-}
-
-@media (max-width: 550px) {
-  .project-row {
-    margin-bottom:5%;
   }
 }
 
@@ -271,14 +340,18 @@ li a:hover {
   text-align: right;
 }
 
+
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
 /* Mobile */
 @media (max-width: 549px) {  
+  
   .hide-mobile {
-    visibility: hidden;
+    display: none;
   }
+  
 }
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -286,6 +359,7 @@ li a:hover {
   .mobile-only {
     display: none;
   }
+  
 }
 
 /* Larger than tablet */

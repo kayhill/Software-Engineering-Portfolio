@@ -8,7 +8,7 @@ const intro = document.getElementById("intro");
 const continueBtn = document.getElementById("continueButton");
 const underCardHolder = document.getElementById("under-card-holder");
 const pullMe = document.getElementById("pull-me");
-const arrowRight = document.getElementById("arrow-right");
+const pullMeMobile = document.getElementById("pull-me-mobile");
 
 
 function pageLoaded() {  
@@ -37,11 +37,17 @@ function clickArrow(arrow) {
   console.log(arrow.getAttribute("data-id"));
 
   let x = arrow.getAttribute("data-id");
-  let f = document.getElementById("features-" + x)
+  let f = document.getElementById("features-" + x);
+  let ar = document.getElementById("arrow-" + x);
+  ar.remove();
+  let transitionCard = f.parentNode.parentNode;
+  transitionCard.classList.remove("hide-mobile");
+  transitionCard.offsetHeight;
   f.parentNode.classList.add("visible-card", "six");
-  f.parentNode.parentNode.classList.remove("hide-mobile");
+  
   f.classList.add("visible");
   if (x == 1) {
     pullMe.remove();
+    pullMeMobile.remove();
   };
 } 

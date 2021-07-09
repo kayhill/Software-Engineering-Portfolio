@@ -35,20 +35,27 @@
     </header>
     <main>
       <section id="main">
-        <div class="container tag" id="intro">
+        <div class="visible" id="intro">
           <div class="row">
-            <h1>Hello, world! </h1>
-            <ul>
-              <li>Slick Slider https://kenwheeler.github.io/slick/</li>
-              <li>Lazy Load</li>
-              <li>Minified CSS</li>
-              <li>Simple CSS animations</li>
-              <li>Images and Summaries of Work/Challenges</li>  
-            </ul>
+            <div class="offset-by-five columns five intro-text">
+              <span id="name">Kayliegh Hill</span>
+              <hr class="solid">
+              
+              <h1>Web Developer</h1>
+              <p>Specializing in the design and build of <b>small buisiness websites</b> and <b>eCommerce stores</b>.</p>
+              <br>
+              <a href="#my-work"><button id="intro-button">See My Work <i class="fas fa-long-arrow-alt-down"></i></button></a>
+            </div>
           </div>
-          <div class="row">
-            <a href="#my-work"><button id="continueButton" class="grow"><i class="fas fa-long-arrow-alt-down"></i>  Scroll Down</button></a>
+          <div class="row" id="intro-graphics">
+            <div id="selfie-container" class="four columns">
+              <img id="selfie" src="images/kayliegh_webdev _logo.png" alt="Graphic of the developer, Kayliegh Hill with her laptop">
+            </div>
+            <div id="scroll-container" class="offset-by-one column">
+              <a href="#my-work"><button id="continueButton"><i class="fas fa-long-arrow-alt-down"></i>  Scroll Down</button></a>
+            </div>
           </div>
+          
         </div>
       </section>
       <section id="my-work">
@@ -65,12 +72,17 @@
                 </div>                
               </div>
               
-              <a href="#mywork" data-id="1" id="1" onclick="clickArrow(this);"><div id="arrow-right" class="arrow-right hide-mobile"></div>
+              <a href="#mywork" data-id="1" id="1" onclick="clickArrow(this);"><div id="arrow-1" class="arrow-right"></div>
               
             </div>
-            <div class="one column pull-me" id="pull-me">
+            <div class="one hide-mobile column pull-me" id="pull-me">
               <button id="pull-me-button">Click Me <i class="fas fa-long-arrow-alt-right"></i></button>
             </div></a>
+            
+            <div class="one mobile-only column pull-me" id="pull-me-mobile">
+              <button id="pull-me-button-mobile">Click Tab <i class="fas fa-long-arrow-alt-up"></i></button>
+            </div></a>
+            
 
             <div class= "under-card-holder hide-mobile">
               <div class="five columns under-card">            
@@ -88,9 +100,9 @@
             </div>                   
           </div>
 
-          <div class="row project-row">
+          <div class="row project-row hide-mobile">
 
-            <div class= "under-card-holder hide-mobile">
+            <div class= "under-card-holder">
               <div class="five columns under-card-right">            
               <div id="features-2" class="feature-list container">
                 <h5>Reaching More Clients with a Straight-Forward Design </h5>
@@ -106,7 +118,7 @@
             </div> 
 
             <div class="one-half column project-card">
-              <a href="#mywork" data-id="2" id="2" onclick="clickArrow(this);"><div id="arrow-left" class="arrow-left"></div> 
+              <a href="#mywork" data-id="2" id="2" onclick="clickArrow(this);"><div id="arrow-2" class="arrow-left"></div> 
               </a>
               <div class="card">              
                 <div class="container">
@@ -117,15 +129,23 @@
             </div>                                       
           </div>
 
-         
+          <div class="row project-row mobile-only">
 
-                  
+            <div class="one-half column project-card">
+              <a href="#mywork" data-id="3" id="3" onclick="clickArrow(this);"><div id="arrow-3" class="arrow-left"></div> 
+              </a>
+              <div class="card">              
+                <div class="container">
+                  <h4>Buisiness Landing Page</h4>                  
+                  <img src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Skyline Appraisal Desktop Website">               
+                </div>                
+              </div>      
+            </div>  
 
-
-          <div class="row project-row">
-            <div class="one-half column hide-mobile">
-              <div id="features-2" class="feature-list container">
-                <h5>Reaching More Clients with a Straight-Forward Design </h5>
+            <div class= "under-card-holder hide-mobile">
+              <div class="five columns under-card-right">            
+              <div id="features-3" class="feature-list container">
+                <h5>Increasing Reach with Info Page</h5>
                 <ul>
                   <li>Custom Design and Build with CSS & HTML</li>
                   <li>Branding and Logos Developed for Brand Recognition</li>
@@ -133,40 +153,134 @@
                   <br>
                   <span>Visit <a href="https://skylineappraisalwnc.com">Skyline Appraisal WNC</a></span>
                 </ul>
-              </div>              
-            </div>
-
-            <div class="one-half column">
-              <div class="card">
-                <div class="container">
-                  <h4>Buisiness Landing Page</h4>
-                             
-                  <a href="#mywork" data-id="2" id="2" onclick="clickArrow(this);">
-                    <img class="hide-mobile" src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Seed and Sprout Farm Desktop Website">    
-                  <h5 class="hide-mobile"><i class="fas fa-long-arrow-alt-left"></i> View Features </h5>
-                  </a>
-                  <a href="#mywork" data-id="3" id="3" onclick="clickArrow(this)";>
-                    <img class="mobile-only" src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Seed and Sprout Farm Desktop Website">    
-                  <h5 class="mobile-only feature-tag">View Features <i class="fas fa-long-arrow-alt-down"></i></h5></a>
-                </div>
               </div>
-            </div>
-
-              <div class="one-half column mobile-only">
-                <div id="features-3" class="feature-list container">
-                  <h5>Reaching More Clients with a Straight-Forward Design </h5>
-                  <ul>
-                    <li>Custom Design and Build with CSS & HTML</li>
-                    <li>Branding and Logos Developed for Brand Recognition</li>
-                    <li>Hosting, Domain, and Google Analytics Included</li>
-                    <br>
-                    <span>Visit <a href="https://skylineappraisalwnc.com">Skyline Appraisal WNC</a>
-                  </ul>
-                </div>              
               </div>
-            
+            </div> 
+
+                                                 
           </div>
 
+          <div class="row project-row">
+            <div class="one-half column project-card">
+              <div class="card">              
+                <div class="container">
+                  <h4>Telemedicine Website</h4>                  
+                  <img src="images\GreenMindHome_Mobile.JPG" alt="Screenshot of Green Mind Physicians Home Page Image">               
+                </div>                
+              </div>
+              
+              <a href="#mywork" data-id="4" id="4" onclick="clickArrow(this);"><div id="arrow-4" class="arrow-right"></div></a>
+              
+            </div>         
+                     
+            
+            <div class= "under-card-holder hide-mobile">
+              <div class="five columns under-card">            
+              <div id="features-4" class="feature-list container">
+                <h5>Search Engine Optimization Focus</h5>
+                  <ul>
+                    <li>WordPress Website Customized for Mobile Audience</li>
+                    <li>SEO Focused Build and Maintenance</li>
+                    <li>Content and Branding Creation</li>
+                    <br>
+                    <span>Visit <a href="https://greenmindphysicians.com">GreenMind Physicians</span></a>
+                  </ul>
+              </div>
+              </div>
+            </div>                   
+          </div>
+
+          <div class="row project-row hide-mobile">
+
+            <div class= "under-card-holder">
+              <div class="five columns under-card-right">            
+              <div id="features-5" class="feature-list container">
+                <h5>Social Web Application for Music Lovers</h5>
+                <ul>
+                  <li>Original Design and Build with CSS, HTML, and Python</li>
+                  <li>Built with Python using Django Web Framework </li>
+                  <li>Utilizes External Music APIs</li>
+                  <li>Local Database using Postgresql</li>
+                  <br>
+                  <span>Visit <a href="herokuapp.com/aotw">Album of the Week</a></span>
+                </ul>
+              </div>
+              </div>
+            </div> 
+
+            <div class="one-half column project-card">
+              <a href="#mywork" data-id="5" id="5" onclick="clickArrow(this);"><div id="arrow-5" class="arrow-left"></div> 
+              </a>
+              <div class="card">              
+                <div class="container">
+                  <h4>Web Application</h4>                  
+                  <img src="images/AOTW_Desktop_Home.JPG" alt="Screenshot of Album of the Week Desktop Application">               
+                </div>                
+              </div>      
+            </div>                                       
+          </div>
+
+          <div class="row project-row mobile-only">
+
+            <div class="one-half column project-card">
+              <a href="#mywork" data-id="6" id="6" onclick="clickArrow(this);"><div id="arrow-6" class="arrow-left"></div> 
+              </a>
+              <div class="card">              
+                <div class="container">
+                  <h4>Web Application</h4>                  
+                  <img src="images/AOTW_Desktop_Home.JPG" alt="Screenshot of Album of the Week Desktop Application">               
+                </div>                
+              </div>      
+            </div>  
+
+            <div class= "under-card-holder hide-mobile">
+              <div class="five columns under-card-right">            
+              <div id="features-6" class="feature-list container">
+                <h5>Social Web Application for Music Lovers</h5>
+                <ul>
+                  <li>Original Design and Build with CSS, HTML, and Python</li>
+                  <li>Built with Python using Django Web Framework </li>
+                  <li>Utilizes External Music APIs</li>
+                  <li>Local Database using Postgresql</li>
+                  <br>
+                  <span>Visit <a href="herokuapp.com/aotw">Album of the Week</a></span>
+                </ul>
+              </div>
+              </div>
+            </div> 
+
+                                                 
+          </div>
+
+          <div class="row project-row">
+            <div class="one-half column project-card">
+              <div class="card">              
+                <div class="container">
+                  <h4>Buisiness Owner's Portfolio</h4>                  
+                  <img src="images\JMCOwners_Desktop_Home.JPG" alt="Screenshot of JMC Owner's Rep HomePage Image">               
+                </div>                
+              </div>
+              
+              <a href="#mywork" data-id="7" id="7" onclick="clickArrow(this);"><div id="arrow-7" class="arrow-right"></div></a>
+              
+            </div>         
+                     
+            
+            <div class= "under-card-holder hide-mobile">
+              <div class="five columns under-card">            
+              <div id="features-7" class="feature-list container">
+                <h5>Spotlight on Projects and Services</h5>
+                  <ul>
+                    <li>WordPress Customization to Convey Owner's Personal Style</li>
+                    <li>Optimized Images for Quick Loading</li>
+                    <li>Content Development Consistent with Brand</li>                    
+                    <br>
+                    <span>Visit <a href="https://jmcorep.com">JMC Owners' Rep Services</span></a>
+                  </ul>
+              </div>
+              </div>
+            </div>                   
+          </div>
 
           
         </div>

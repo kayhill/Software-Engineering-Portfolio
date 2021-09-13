@@ -108,7 +108,7 @@ hr.solid {
 
 #selfie-container {
   max-width: 50%;
-  margin: -5% 10%;
+  margin: -10% 10%;
 }
 
 #scroll-container {
@@ -128,7 +128,7 @@ hr.solid {
     width: 95%;
   }
   #selfie-container {
-    margin: -5% 0;
+    margin: -10% 0;
   }
 }
 

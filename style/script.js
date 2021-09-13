@@ -1,7 +1,7 @@
+"use strict";
 
 //Event Listeners
-document.addEventListener('DOMContentLoaded', pageLoaded);
-
+document.addEventListener("DOMContentLoaded", pageLoaded);
 
 const tags = document.getElementsByClassName("tag");
 const intro = document.getElementById("intro");
@@ -10,30 +10,29 @@ const underCardHolder = document.getElementById("under-card-holder");
 const pullMe = document.getElementById("pull-me");
 const pullMeMobile = document.getElementById("pull-me-mobile");
 
-
-function pageLoaded() {  
+function pageLoaded() {
   intro.classList.add("visible");
-  document.addEventListener('scroll', fadeScroll);
-  continueBtn.addEventListener('click', clickButton);
+  document.addEventListener("scroll", fadeScroll);
+  continueBtn.addEventListener("click", clickButton);
 }
 
-function fadeScroll(){
+function fadeScroll() {
   for (let i = 0; i < tags.length; i++) {
-    let tag = tags[i]
+    let tag = tags[i];
     let rect = tag.getBoundingClientRect();
     if (rect.top <= window.pageYOffset - 50) {
       tag.classList.add("visible");
       continueBtn.classList.add("invisible");
-    } 
+    }
   }
 }
 
-function clickButton(){
+function clickButton() {
   continueBtn.classList.add("invisible");
 }
 
 function clickArrow(arrow) {
-  // Testing 
+  // Testing
   console.log(arrow.getAttribute("data-id"));
 
   let x = arrow.getAttribute("data-id");
@@ -44,10 +43,10 @@ function clickArrow(arrow) {
   transitionCard.classList.remove("hide-mobile");
   transitionCard.offsetHeight;
   f.parentNode.classList.add("visible-card", "six");
-  
+
   f.classList.add("visible");
   if (x == 1) {
     pullMe.remove();
     pullMeMobile.remove();
-  };
-} 
+  }
+}

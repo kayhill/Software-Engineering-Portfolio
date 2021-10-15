@@ -152,24 +152,9 @@ section#main {
 }
 
 /* My Work */
-.project-row {
-  position: relative;
-  margin-bottom: 5%;
-}
-
-.project-row a span {
-  color: #003366;
-  text-decoration: none;
-}
-
-.project-card {
-  display: flex;
-  z-index: 10;
-  opacity: 1;
-  margin: 0 auto;
-}
 
 .card {
+  margin-bottom: 5%;
   z-index: inherit;
   opacity: 1;
   padding-top: 2%;
@@ -178,13 +163,20 @@ section#main {
   border-radius: 5px;
 }
 
-.card img {
+.card a span {
+  color: #003366;
+  text-decoration: none;
+}
+
+.project-img {
+  margin-top: 1em;
   border-radius: 5px 5px 0 0;
   max-width: 100%;
   box-sizing: border-box;
 }
 
-.project-link {
+.project-link,
+.caption {
   color: #630b48;
 }
 
@@ -192,7 +184,7 @@ section#main {
   font-weight: bold;
 }
 
-.card img:hover {
+.project-img:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -200,12 +192,8 @@ section#main {
   font-weight: bold;
 }
 
-.project-img {
-  margin-top: 1em;
-}
-
 @media (max-width: 550px) {
-  .project-row {
+  .card {
     margin-bottom: 15%;
   }
 }
@@ -218,7 +206,7 @@ section#main {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  .project-row {
+  .card {
     margin-bottom: 10%;
   }
 }

@@ -17,15 +17,25 @@ button {
   padding: 0 0;
 }
 
+h3 {
+  font-size: 1.6em;
+  color: #630b48;
+}
+
+ul {
+  list-style: disc outside none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+li {
+  padding-left: 1em;
+}
+
 button:hover {
   font-weight: bold;
   color: #a01c78;
   font-size: 1.05em;
-}
-
-.grow {
-  font-size: 1 em;
-  transition: all 0.5s;
 }
 
 .container {
@@ -35,7 +45,7 @@ button:hover {
 .tag {
   opacity: 0;
   transform: translate(0, 10vh);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 /* Nav */
@@ -132,9 +142,24 @@ hr.solid {
   }
 }
 
+/* Global Sections */
+section {
+  margin: 50px 0;
+}
+
+section#main {
+  margin: 0 0;
+}
+
 /* My Work */
 .project-row {
   position: relative;
+  margin-bottom: 5%;
+}
+
+.project-row a span {
+  color: #003366;
+  text-decoration: none;
 }
 
 .project-card {
@@ -145,9 +170,7 @@ hr.solid {
 }
 
 .card {
-  background-color: white;
   z-index: inherit;
-  margin: 0 0;
   opacity: 1;
   padding-top: 2%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -161,19 +184,31 @@ hr.solid {
   box-sizing: border-box;
 }
 
-.card:hover {
+.project-link {
+  color: #630b48;
+}
+
+.project-link:hover {
+  font-weight: bold;
+}
+
+.card img:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card a {
-  text-decoration: none;
-  transition: 0.3s;
+.project-tech {
+  font-weight: bold;
 }
 
-.card a:hover {
-  size: 1.1em;
+.project-img {
+  margin-top: 1em;
 }
 
+@media (max-width: 550px) {
+  .project-row {
+    margin-bottom: 15%;
+  }
+}
 @media (min-width: 550px) {
   .column,
   .columns {
@@ -181,107 +216,10 @@ hr.solid {
   }
 }
 
-.under-card {
-  background-color: #a01c78;
-  color: white;
-  will-change: transform;
-  position: relative;
-  left: -52%;
-  border-radius: 5px;
-  opacity: 1;
-  z-index: 2;
-  transition: all 2s;
-}
-
-.under-card-right {
-  background-color: #003366;
-  color: white;
-  will-change: transform;
-  position: relative;
-  left: 52%;
-  border-radius: 5px;
-  opacity: 1;
-  z-index: 2;
-  transition: all 2s;
-}
-
-@media (max-width: 550px) {
-  .under-card,
-  .under-card-right {
-    margin-bottom: 8%;
-  }
-}
-
-.arrow-right {
-  position: relative;
-  z-index: 1;
-  margin: 30% 0 0 0;
-  width: 0px;
-  height: 0px;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid #a01c78;
-}
-
-.arrow-left {
-  position: relative;
-  z-index: 1;
-  margin: 30% 0 0 0;
-  width: 0px;
-  height: 0px;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right: 60px solid #00336de6;
-}
-
-.arrow-down {
-  position: relative;
-  z-index: 1;
-  width: 0px;
-  height: 0px;
-  border-top: 60px solid transparent;
-  border-left: 60px solid transparent;
-}
-
-.arrow-down-pink {
-  border-right: 60px solid #a01c78;
-}
-
-.visible-card {
-  color: white;
-  height: auto;
-  width: 100%;
-  opacity: 1;
-  transform: rotate(0);
-  border-radius: 5px;
-  left: 0%;
-  padding-top: 2%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.project-row {
-  margin-bottom: 5%;
-}
-
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .project-row {
     margin-bottom: 10%;
-  }
-}
-
-.pull-me {
-  position: relative;
-  z-index: 999;
-  margin: 10% 0 0 0;
-  border: none;
-  margin-left: -4.66666666667%;
-}
-
-@media (max-width: 750px) {
-  .pull-me {
-    text-align: right;
-    margin: 0 0;
   }
 }
 
@@ -316,26 +254,6 @@ hr.solid {
   color: #a01c78;
 }
 
-/* events */
-.feature-list {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 2s;
-}
-
-.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.invisible {
-  display: none;
-}
-
-.align-right {
-  text-align: right;
-}
-
 /* Larger than mobile */
 @media (min-width: 400px) {
 }
@@ -364,4 +282,16 @@ hr.solid {
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
+}
+
+.visible-card {
+  color: white;
+  height: auto;
+  width: 100%;
+  opacity: 1;
+  transform: rotate(0);
+  border-radius: 5px;
+  left: 0%;
+  padding-top: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

@@ -42,10 +42,8 @@ button:hover {
   margin: 5% auto;
 }
 
-.tag {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
+.spacer {
+  height: 50px;
 }
 
 /* Nav */
@@ -221,6 +219,10 @@ section#main {
   text-align: left;
 }
 
+#bio-final-p {
+  margin-block-end: 0;
+}
+
 #youtube-link {
   text-decoration: none;
   color: black;
@@ -248,7 +250,7 @@ section#main {
 
 /* Mobile */
 @media (max-width: 549px) {
-  .hide-mobile {
+  .hide-on-mobile {
     display: none;
   }
 }

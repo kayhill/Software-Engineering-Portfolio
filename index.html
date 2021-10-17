@@ -15,7 +15,7 @@
     
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Kayliegh - Web Developer</title>
+    <title>Kayliegh - Full-Stack Web Developer</title>
 
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
   </head>
@@ -41,7 +41,7 @@
               <span id="name">Kayliegh Hill</span>
               <hr class="solid">
               
-              <h1>Fullstack Web Developer</h1>
+              <h1>Full-Stack Web Developer</h1>
               <p>Specializing in the configuration and build of <b>small business websites</b> and <b>web applications</b>.</p>
               <br>
               
@@ -136,7 +136,7 @@
                 <ul>
                   <li>Social web application to review music albums with friends </li>
                   <li>3rd party API integration</li>
-                  <li>Unique pageviews based on user permissions</li>
+                  <li>Varied pageviews and relational database permissions based on user type</li>
                   <li>Deployed on cloud-based platform (Heroku) </li>
                   <li>Integrates cloud storage (Cloudinary) to allow user image uploads</li>
                 </ul>
@@ -194,20 +194,30 @@
       <section id="case-study">
         <div class="container">
           <div class="row section-title">            
-            <h2>Case Study</h2>
+            <h2>Case Studies</h2>
           </div>
           
+          <div id="page-optimization-study">
           <div class="row">   
-            <h3>Page Optimization</h3>
+            <h3 class="no-btm-margin">Page Optimization</h3>
+            <h4>How I reduced page load time to &lt; 1 second</h4> 
+            
+          </div>
+
+          <div class="row">
             <div class="one-half column">
               <a href="https://kayliegh.me/images/GMP-GTMetrix-New" target="_blank"><img class="project-img" src="./images/GMP-GTMetrix-New.jpg" alt="Website received 100% performance grade from GTMetrix"></a>
-              <span class="caption"><em>100% performance grade from GTMetrix</em></span>
+              <span class="caption"><em>After: 100% performance grade from GTMetrix</em></span>
             </div>         
           
-            <div class="five columns offset-by-one">            
+            <div class="one-half column">            
               <div id="case-text">
                 <br>
-                <p>Vivamus malesuada posuere elementum. Nulla pretium pretium tortor. In luctus velit et lorem rutrum, eu fringilla felis semper. Curabitur sit amet ipsum risus. Vestibulum mollis eu eros et luctus. Donec suscipit ut mi eget imperdiet. Mauris dignissim orci sed ligula consectetur semper. Ut quis bibendum leo. Duis eu euismod enim, in mattis lectus. Ut rhoncus quam nec enim suscipit dignissim. Cras consectetur blandit tincidunt.</p>
+                <ol class="no-btm-margin">
+                  <li><strong>Analysis</strong><br>I used a variety of analytics tools (Server Logs, GTMetrix, Google Analytics, & Lighthouse) to understand what was happening on the site.</li>
+                  <li><strong>Caching</strong><br>Using the W3 Total Cache WordPress plugin, I optimized caching settings for the page and browser, and activated HTML compression. </li>
+                </ol>
+                
               </div>
             </div>
           </div>
@@ -215,34 +225,44 @@
           <div class="row">
             <div class="one-half column">            
               <div id="case-text">
-                <br>
-                <p>Vivamus malesuada posuere elementum. Nulla pretium pretium tortor. In luctus velit et lorem rutrum, eu fringilla felis semper. Curabitur sit amet ipsum risus. Vestibulum mollis eu eros et luctus. Donec suscipit ut mi eget imperdiet. Mauris dignissim orci sed ligula consectetur semper. Ut quis bibendum leo. Duis eu euismod enim, in mattis lectus. Ut rhoncus quam nec enim suscipit dignissim. Cras consectetur blandit tincidunt.</p>
+                <ol start="3">
+                  <br class="hide-on-mobile">
+                  <li><strong>Content Delivery Network (CDN)</strong><br>I atttached a CloudFront Distribution to my AWS Lightsail Instance to speed up delivery of page content, including images and JavaScript and CSS files.</li>
+                  <li><strong>Tweaking Configs</strong><br>I adjusted cPanel and WHM configuration settings to remove unused services and add-ons. The largest increases in performance came from disabling Mailman and turning off the SQL setting 'Include databases in disk usage calculations'.</li>
+                </ol>
               </div>
             </div>
             <div class="one-half column">              
                 <a href="https://kayliegh.me/images/GMP-GTMetrix-Old" target="_blank"><img class="project-img" src="./images/GMP-GTMetrix-Old.jpg"></a>     
-                <span class="caption"><em>Old, mediocre performance grade from GTMetrix</em></span>           
+                <span class="caption"><em>Before: Old, low performance grade from GTMetrix</em></span>           
             </div>
+          </div>
           </div>
 
           <div class="spacer"></div>
 
+          <div id="troubleshooting-study">
           <div clas="row">
-            <h3>Configuration Challenges</h3>
-            <div class="seven columns">
-              <p>Vivamus malesuada posuere elementum. Nulla pretium pretium tortor. In luctus velit et lorem rutrum, eu fringilla felis semper. Curabitur sit amet ipsum risus. Vestibulum mollis eu eros et luctus. Donec suscipit ut mi eget imperdiet. Mauris dignissim orci sed ligula consectetur semper. Ut quis bibendum leo. Duis eu euismod enim, in mattis lectus. Ut rhoncus quam nec enim suscipit dignissim. Cras consectetur blandit tincidunt</p>
+            <h3 class="no-btm-margin">Troubleshooting an Unresponive Server</h3>
+            <h4>How I recovered a website from a locked AWS Lightsail Instance</h4> 
+            <div class="one-half column">
+              <p>Shortly after activating a new plugin on a client's WordPress site, the connection timed out. When I went to investigate error logs and delete the problematic plugin, I found the server to be unresponsive and inaccessible.</p>
+              <p>I attempted to fix the problem by reverting to a backup version of the website, but I was locked out of every new instance of the server. Seeing this wasn't going to be a quick fix, I spun up a temporary website to minimize the impact of the site's downtime on my client.</p>
+              <p>Finally, after 30 hours of research, reconfiguration, and trial and error, the website was back online. I recorded my troubleshooting process, the lessons I learned, and preventive strategies in <a href="https://docs.google.com/document/d/1gjHPGPm1Cyxup85Fh5eWAXhN6eFX7z4WbHhgBueFjAo/edit?usp=sharing" target="_blank">this document.</a></p>              
+            </div>
+            <div class="five columns offset-by-one">
               
+              <a href="https://docs.google.com/document/d/1gjHPGPm1Cyxup85Fh5eWAXhN6eFX7z4WbHhgBueFjAo/edit?usp=sharing" target="_blank"><img class="document-img project-img" src="images/Entire_IncidentReport_Image.JPG">
+              <span class="caption"><em>View the Full Incident Report  <i class="fas fa-long-arrow-alt-right"></i></em></span></a>
             </div>
-            <div class="four columns offset-by-one">
-              <a href="https://google.com" target="_blank"><img class="project-img" src="images/GreenMindHome_Mobile.JPG"></a>
-            </div>
+          </div>
           </div>
             
         </div>
       </section>
       <section id="contact">
         <div class="container">
-          <div class="row section-title">
+          <div class="row section-title">/
             <h2>Contact</h2>
           </div>
           <div class="row">
@@ -254,7 +274,7 @@
                 <li><a href="mailto:kayliegh.hill@gmail.com" target="_blank"><i class="far fa-envelope"></i> Email </a></li>
                 <li><a href="https://www.linkedin.com/in/kayliegh-hill/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                 <li><a href="github.com/kayhill"><i class="fab fa-github-alt"></i> GitHub</a></li>
-                <a href="#main"><button>Return To Top <i class="fas fa-long-arrow-alt-up"></i></button></a>
+                <li><a href="#main"><i class="fas fa-long-arrow-alt-up"></i>Return To Top</a></li>
               </ul>
             </div>
           </div>

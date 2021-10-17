@@ -22,10 +22,20 @@ h3 {
   color: #630b48;
 }
 
+h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 ul {
   list-style: disc outside none;
+}
+
+ul,
+ol {
   margin-left: 0;
   padding-left: 1em;
+  list-style-position: outside;
 }
 
 li {
@@ -44,6 +54,10 @@ button:hover {
 
 .spacer {
   height: 50px;
+}
+
+.no-btm-margin {
+  margin-bottom: 0;
 }
 
 /* Nav */
@@ -186,6 +200,9 @@ section#main {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.document-img {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 .project-tech {
   font-weight: bold;
 }

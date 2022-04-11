@@ -68,9 +68,9 @@
 
               <p>The more experience I gained as a web developer, the more I felt a pull toward engineering. While managing the back-end structure of client's sites and troubleshooting their servers, I realized that I craved more work with databases, servers, and custom code. In between clients, I began building web applications using JavaScript and Python. </p>
 
-              <p>In January of 2022, I began an Immersive Software Engineering Course with Codesmith to further develop my skills as an engineer and problem solver. Codesmith's program is designed for experienced developers craving a deep dive 'under-the-hood' of JavaScript and related technologies, while also focusing on the development of engineering 'soft-skills' like technical communication and collaborative coding.</p>
+              <p>In January of 2022 I joined Open Source Labs (<a href="https://oslabsbeta.io" target="_blank" rel="noreferrer noopener">OSLabs</a>), a selective community of dedicated engineers with the shared mission of driving creative technological advancements through open source. Together with a team of like-minded engineers, we built <a href="https://medium.com/@kayliegh/kafkavision-an-open-source-monitoring-tool-for-apache-kafka-6617ebd9522b" target="_blank" rel="noreferrer noopener">kafkaVision</a>, a visualization and monitoring solution for Apache Kafka applications.</p>
                 
-              <p id="bio-final-p">I'm excited to begin working with a team of engineers at a company that prioritizes community and values hardwork. Let's build something great together!</p>
+              <p id="bio-final-p">I'm actively looking for my next opportunity/challenge with a team that prioritizes community and values hardwork. Let's build something great together!</p>
             </div>
           </div>
         </div>
@@ -82,11 +82,11 @@
           </div>
           <div class="row">
             <div class="column">
-              <span><strong>Backend</strong> Node.js/Express, Python, Django, PostgreSQL, MongoDB, AWS</span>
+              <span><strong>Backend</strong> Node.js/Express, Python, Django, SQL, NoSQL, AWS</span>
               <br>
-              <span><strong>Frontend</strong> React, JavaScript, CSS, HTML</span>    
+              <span><strong>Frontend</strong> React, JavaScript, CSS, HTML, Bootstrap, Tailwind CSS</span>    
               <br>         
-              <span><strong>Other</strong> Git, Linux command-line, WordPress</span>            
+              <span><strong>Other</strong> Git, Linux, Wordpress, Testing, OAuth</span>            
           </div>
           </div>
         </div>
@@ -97,12 +97,38 @@
           <div class="row section-title">
             <h2>Work and Projects</h2>            
           </div>
+          <div id="project-kafkaVision" class="card row">
+            <a href="https://github.com/oslabs-beta/kafkavision" target="_blank" rel="noreferrer noopener">
+              <div class="one-half column">                             
+                  <div class="container">
+                    <h3>kafkaVision - Open Source Product</h3>      
+                    <span>Stack: </span><span class="project-tech">Apache Kafka, Prometheus, KafkaJS, Node/Express, TypeScript, JavaScript, React, Chart.js, TailwindCSS, Jest, React-Testing-Library</span>            
+                    <img class="project-img" src="images/kafkaVision-health-metrics.gif" alt="gif of kafkaVision dashboard and health metrics feed">    
+                    <img class="project-img" src="images/kafkaVision-partition-diagram.gif" alt="gif of kafkaVision dashboard and health metrics feed">  
+                    <span class="project-link"><em>Visit kafkaVision on GitHub</em>  <i class="fas fa-long-arrow-alt-right"></i></span>               
+                  </div>                                            
+              </div>
+            </a>
+            <div class="one-half column">        
+              <div class="container">
+                <div class="spacer hide-on-mobile"></div>
+                <ul>
+                  <li>Constructed Prometheus monitoring system queries using PromQL to obtain instant and range vector data types to inform graphic representations of a Kafka cluster’s key health metrics</li>
+                  <li>Leveraged KafkaJS for its implementation of the Kafka client in pure JavaScript to allow our Node.js application to seamlessly communicate with a cluster’s Admin API without the need for additional dependencies</li>
+                  <li>Configured Webpack with ts-loader and babel-loader to transpile code to JavaScript ES6 and bundle files for an optimized production build; Enabled a webpack-dev-server proxy to leverage hot reloading in development mode</li>
+                  <li>Employed TypeScript to enforce static type error handling and minimize errors while improving scalability and maintainability across the codebase for future open source contributors</li>
+                  <li>Integrated React hooks and Context API to form a centralized state tree, allowing fluid data flow and avoiding complicated prop drilling across nested components</li>
+                  <li>Incorporated Jest and React Testing Library, coupled with Eslint and TypeScript Compiler for static and unit testing to ensure code stability, maintainability, and consistency</li>
+                </ul>
+              </div>
+            </div>                   
+          </div>  
           <div id="project-greenmind" class="card row">
             <a href="https://greenmindphysicians.com" target="_blank" rel="noreferrer noopener">
               <div class="one-half column">                        
                   <div class="container">
-                    <h3>WordPress Website</h3>   
-                    <span>Stack: </span><span class="project-tech">AWS Lightsail (pre-configured LAMP), Amazon Cloudfront CDN, WordPress, Google Analytics</span>               
+                    <h3>Telemedicine Website</h3>   
+                    <span>Stack: </span><span class="project-tech">AWS Lightsail (LAMP), Amazon Cloudfront CDN, WordPress, Google Analytics</span>               
                     <img class="project-img" src="images\GreenMindHome.JPG" alt="Screenshot of Green Mind Physicians Home Page Image">    
                     <span class="project-link"><em>Visit Green Mind Physicians</em>  <i class="fas fa-long-arrow-alt-right"></i></span>           
                   </div>                
@@ -111,12 +137,11 @@
               <div class="one-half column">            
               <div id="features-4" class="container">
                   <ul>
-                    <li>Configured cloud hosting for simple scaling and server management </li>
-                    <li>Attached CDN for page speed and caching optimization</li>
-                    <li>Customized design, content, and branding </li>
-                    <li>Generate SEO focused content -- key pages appear on first page of Google search!</li>
-                    <li>Edit website based on audience behavior data from Google Analytics</li>
-                    <li>Improve pagespeeds using tools like Lighthouse and GTMetrix</li>
+                    <li>Managed an eCommerce website hosted on an AWS virtual private server configured with Linux/Apache/MySQL/PHP, connecting via SSH to securely access the VPS to diagnose performance bottlenecks and troubleshoot system errors </li>
+                    <li>Attached AWS Cloudfront CDN to the server to cache static pages and serve files to clients with low latency, contributing to a reduction of page load speeds from an average of 5 seconds to less than 1 second</li>
+                    <li>Rearchitected website from ground-up to implement SEO best practices in image optimization, content strategy, and structured data, leading to an increase of organic page views by 32% and unique users by 49%</li>
+                    <li>Migrated to an auto-scaling host platform with more robust security to improve long-term maintainability for a paired-down dev team and to better equip the site to handle rapid traffic growth</li>
+                    <li>Set up monitoring with JavaScript header tags and synthesized data from Google Analytics, marketing services, and socials to drive development decisions and deliver status reports to the CEO</li>
                   </ul>
               </div>
               </div>                   
@@ -126,7 +151,7 @@
               <div class="one-half column">         
                   <div class="container">
                     <h3>Python Web Application</h3>
-                    <span>Stack: </span><span class="project-tech">Django, PostgreSQL, CSS, HTML, Heroku</span>                     
+                    <span>Stack: </span><span class="project-tech">Python, Django, PostgreSQL, Cloudinary, CSS, HTML</span>                     
                     <img class="project-img" src="images/AOTW_Desktop_Home.JPG" alt="Screenshot of Album of the Week Desktop Application">
                     <span class="project-link"><em>Visit Album of the Week</em>  <i class="fas fa-long-arrow-alt-right"></i></span>                
                   </div>                
@@ -137,11 +162,33 @@
                 <div class="spacer hide-on-mobile"></div>
                 <ul>
                   <li><a href="https://github.com/kayhill/album-review" target="_blank" rel="noreferrer noopener">GitHub Link</a></li>
-                  <li>Social web application to review music albums with friends </li>
+                  <li>Leveraged Django’s full-stack web framework and Model View Template architecture to facilitate personalized, dynamic webpage creation based on user privileges and social interaction</li>
+                  <li>Integrated a SQL database to securely store relational data along with Cloudinary’s high-availability cloud storage to host user-uploaded avatars</li>
                   <li>3rd party API integration</li>
-                  <li>Varied pageviews and relational database permissions based on user type</li>
-                  <li>Deployed on cloud-based platform (Heroku) </li>
-                  <li>Integrates cloud storage (Cloudinary) to allow user image uploads</li>
+                </ul>
+              </div>
+              </div>                                                
+          </div> 
+          <div id="project-bybirdie" class="card row">
+            <a href="https://bybirdie.netlify.app/" target="_blank" rel="noreferrer noopener">
+              <div class="one-half column">         
+                  <div class="container">
+                    <h3>Express Web Application</h3>
+                    <span>Stack: </span><span class="project-tech">Node/Express, JavaScript, NoSQL(MongoDB), Bcrypt, React, React-Router, MaterializeCSS, Heroku, Netlify</span>                     
+                    <img class="project-img" src="images/ByBirdieBirdwatching.JPG" alt="Screenshot of ByBirdie application session">
+                    <span class="project-link"><em>Visit ByBirdie</em>  <i class="fas fa-long-arrow-alt-right"></i></span>                
+                  </div>                
+              </div>      
+            </a> 
+              <div class="one-half column">            
+              <div class="container">
+                <div class="spacer hide-on-mobile"></div>
+                <ul>
+                  <li><a href="https://github.com/kayhill/bybirdie" target="_blank" rel="noreferrer noopener">GitHub Link</a></li>
+                  <li>Architected RESTful API with Node.js/Express, implementing routers and controller middleware to simplify communication between frontend HTTP requests, NoSQL database, and  third-party APIs</li>
+                  <li>Encrypted user passwords with Bcrypt’s hashing algorithm and SALT rounds to safeguard user information from brute-force and dictionary attacks </li>
+                  <li>Integrated React Router to synchronize URL routing with application state and allow dynamic rendering of components to lessen request load on the server, emphasizing fast load times on the client and better user experience</li>
+                  <li>Deployed front and back ends of application to unique online hosting platforms to optimize for fast static page loading, continuous deployment pipelines, and reliable cloud database integration</li>
                 </ul>
               </div>
               </div>                                                
@@ -150,8 +197,8 @@
             <a href="https://halloween-nfts.herokuapp.com/" target="_blank" rel="noreferrer noopener">
               <div class="one-half column">         
                   <div class="container">
-                    <h3>Web3 App: NFT Collection</h3>
-                    <span>Stack: </span><span class="project-tech">Ethereum, Hardhat, Solidity, JavaScript, Alchemy, React, Heroku</span>                     
+                    <h3>Hobby Project: Web3 App</h3>
+                    <span>Stack: </span><span class="project-tech">Ethereum, Hardhat, Solidity, JavaScript, Alchemy, React</span>                     
                     <img class="project-img" src="images/Halloween_Collection.JPG" alt="Screenshot of Halloween NFT Collection Application">
                     <span class="project-link"><em>Visit Halloween NFTs</em>  <i class="fas fa-long-arrow-alt-right"></i></span>                
                   </div>                
@@ -162,43 +209,18 @@
                 <div class="spacer hide-on-mobile"></div>
                 <ul>
                   <li><a href="https://github.com/kayhill/epic-nft" target="_blank" rel="noreferrer noopener">GitHub Link</a></li>
-                  <li>Web3 App that lets users mint an NFT on the Ethereum Blockchain </li>
-                  <li>Smart Contract generates unique SVG images</li>
-                  <li>Lives on Rinkeby chain of Ethereum Test Network</li>
-                  <li>React front-end (starter code provided by Buildspace)</li>
+                  <li>Just for fun, built a Web3 App that lets users mint an NFT on the Ethereum Blockchain </li>
+                  <li>Features: React app that connects users to Smart Contract which generates unique SVG images that actually live on the Rinkeby chain of Ethereum Test Network</li>
                   <li>Built during Deneb cohort of <a href="https://buildspace.so/" target="_blank" rel="noreferrer noopener">Buildspace</a></li>
                 </ul>
               </div>
               </div>                                                
-          </div> 
-          <div id="project-seedandsprout" class="card row">
-            <a href="https://seedandsprout.farm" target="_blank" rel="noreferrer noopener">
-              <div class="one-half column">                             
-                  <div class="container">
-                    <h3>eCommerce Site</h3>      
-                    <span>Stack: </span><span class="project-tech">WordPress, PHP, WooCommerce</span>            
-                    <img class="project-img" src="images/SeedAndSproutDesktop_Home.PNG" alt="Screenshot of Seed and Sprout Farm Desktop Website">    
-                    <span class="project-link"><em>Visit Seed and Sprout</em>  <i class="fas fa-long-arrow-alt-right"></i></span>               
-                  </div>                                            
-              </div>
-            </a>
-            <div class="one-half column">        
-              <div class="container">
-                <div class="spacer hide-on-mobile"></div>
-                <ul>
-                  <li>WordPress theme customization using PHP hooks and filters </li>
-                  <li>Marketplace and payment management with WooCommerce platform </li>
-                  <li>Original branding, logo, and page content</li>
-                  <li>Responsive design </li>
-                </ul>
-              </div>
-            </div>                   
-          </div>          
+          </div>                   
           <div id="project-skylineappraisal" class="card row">
             <a href="https://skylineappraisalwnc.com" target="_blank" rel="noreferrer noopener">
             <div class="one-half column">             
                 <div class="container">
-                  <h3>Custom Coded Website</h3>     
+                  <h3>Custom Coded Static Website</h3>     
                   <span>Stack: </span><span class="project-tech">HTML, CSS, Materialize CSS, GitHub, Netlify</span>              
                   <img class="project-img" src="images\SkylineAppraisalDesktop_Home.JPG" alt="Screenshot of Skyline Appraisal Desktop Website">  
                   <span class="project-link"><em>Visit Skyline Appraisal</em>  <i class="fas fa-long-arrow-alt-right"></i></span>               
@@ -210,11 +232,10 @@
                 <div class="spacer hide-on-mobile"></div>
                 <ul>
                   <li><a href="https://github.com/kayhill/skylineappraisal" target="_blank" rel="noreferrer noopener">GitHub Link</a></li>
-                  <li>Custom design and build with CSS & HTML</li>
-                  <li>Materialize CSS Framework</li>
-                  <li>Original branding, logo, and content</li>
-                  <li>Automated builds from GitHub/Netlify</li>
-                  <li><em>(the first website I coded! 2020.)</em></li>
+                  <li>Example of a custom sites I designed and built for client using HTML and CSS, with a focus on delivering a quick page load, smooth navigation, responsive design, HTTPS encryption, and long-term maintainability</li>
+                  <li>Designed original branding, logo, and content</li>
+                  <li>Leveraged automated builds from GitHub/Netlify</li>
+                  <li><em>(the first website I coded!)</em></li>
                 </ul>
               </div>
               </div>
